@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'', //TODO: localhost:4200/ <---
-    
+    path:'', //TODO: localhost:4200/ <--- RUTA RAIZ
+    loadChildren: () => import(`./modules/home/home.module`).then(m => m.HomeModule)
   }
 ];
 
